@@ -1,0 +1,7 @@
+# Exclude documentation files
+*.md
+docs/**
+
+# Exclude development files
+.DS_Store
+*.log
