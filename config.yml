@@ -1,0 +1,4 @@
+# Configuration file for testing deployment scenarios
+parallel_upload_enabled: true
+max_connections: 3
+fallback_enabled: true
