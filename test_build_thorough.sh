@@ -132,6 +132,7 @@ echo ""
 echo "--- Testing Go ---"
 go version
 mkdir -p test-go && cd test-go
+go mod init testgo
 cat > main.go << 'EOF'
 package main
 import "fmt"
@@ -141,7 +142,7 @@ func main() {
 EOF
 
 go build
-./test-go
+./testgo
 cd ..
 echo "✅ Go test passed"
 echo ""
