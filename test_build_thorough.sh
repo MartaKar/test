@@ -89,8 +89,8 @@ data = { message: "Ruby works!" }
 puts JSON.generate(data)
 EOF
 
-bundle install
-ruby test.rb
+bundle install --path vendor/bundle
+bundle exec ruby test.rb
 cd ..
 echo "✅ Ruby test passed"
 echo ""
