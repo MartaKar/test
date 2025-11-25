@@ -80,13 +80,13 @@ ruby --version
 mkdir -p test-ruby && cd test-ruby
 cat > Gemfile << 'EOF'
 source 'https://rubygems.org'
-gem 'json'
+gem 'rake'
 EOF
 
 cat > test.rb << 'EOF'
-require 'json'
-data = { message: "Ruby works!" }
-puts JSON.generate(data)
+require 'rake'
+puts "Ruby works!"
+puts "Rake version: #{Rake::VERSION}"
 EOF
 
 bundle install --path vendor/bundle
